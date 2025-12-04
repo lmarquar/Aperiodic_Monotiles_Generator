@@ -3,5 +3,5 @@ ultimatly it should be a website, where Users can adjust coloring, size, image_s
 
 # References: 
 - David Smith (amateur mathematician and Inventor of this pattern): https://cs.uwaterloo.ca/~csk/hat/
-- Alexander Smolyanskiy: (forked repository for a python program which i wil base the backend on [https://github.com/lmarquar/Einstein_Tile_Generator_img])
+- Alexander Smolyanskiy: (forked repository for a python program which i wil base the backend on [https://github.com/lmarquar/Einstein_Tile_Gene rator_img])
 - 
