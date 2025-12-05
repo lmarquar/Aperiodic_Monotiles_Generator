@@ -1,14 +1,24 @@
+import sys
 from pattern_generator import *
 from graphics_tk import draw_tiles
 
-SCALAR = 10
-ITERATIONS = 5
+SCALAR = 1
+ITERATIONS = 7  # more than 8 might break
 COLORQUINTETT = "black", "seagreen", "White", "sandybrown", "sandybrown"
 
-for i in range(ITERATIONS):
-    next_generation(COLORQUINTETT)
+colors = [5]
+scalar = SCALAR
+colorqintett = COLORQUINTETT
+iterations = ITERATIONS
+i = 1
+# if (i < len(sys.argv)) and sys.argv[i].isnumeric:
+#     scalar = int(sys.argv[i])
+# for i in range(len(sys.argv)):
+#     if (sys.argv[i].isnumeric):
 
-s = draw_tiles(vertices_to_draw, width=1000, height=1000,
-               scalar=SCALAR, show_window=True)
 
+for i in range(iterations):
+    next_generation(colorqintett)
+s = draw_tiles(vertices_to_draw, width=5000, height=5000,
+               scalar=scalar, show_window=False)
 print(s)
